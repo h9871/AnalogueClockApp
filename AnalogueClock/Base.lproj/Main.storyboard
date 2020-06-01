@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yEB-01-1U0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TAC-H4-5oY">
+            <objects>
+                <viewController id="yEB-01-1U0" customClass="ViewController" customModule="AnalogueClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44N-HI-SPd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-K9-Wok" userLabel="Clock View">
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_body" translatesAutoresizingMaskIntoConstraints="NO" id="bAY-HB-xe7">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bAY-HB-xe7" secondAttribute="trailing" id="7W7-Lw-0R8"/>
+                                    <constraint firstAttribute="bottom" secondItem="bAY-HB-xe7" secondAttribute="bottom" id="9mx-zd-TqS"/>
+                                    <constraint firstAttribute="width" secondItem="Oxb-K9-Wok" secondAttribute="height" multiplier="1:1" id="Fv3-UV-LfZ"/>
+                                    <constraint firstItem="bAY-HB-xe7" firstAttribute="leading" secondItem="Oxb-K9-Wok" secondAttribute="leading" id="YIV-F2-hhQ"/>
+                                    <constraint firstItem="bAY-HB-xe7" firstAttribute="top" secondItem="Oxb-K9-Wok" secondAttribute="top" id="uix-eE-mZj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-Ul-nOe">
+                                <rect key="frame" x="192" y="378" width="30" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hour_hand" translatesAutoresizingMaskIntoConstraints="NO" id="IYj-Ps-Ht8">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IYj-Ps-Ht8" firstAttribute="top" secondItem="RX0-Ul-nOe" secondAttribute="top" id="LpD-Ru-LfU"/>
+                                    <constraint firstAttribute="bottom" secondItem="IYj-Ps-Ht8" secondAttribute="bottom" id="RVj-eR-5kg"/>
+                                    <constraint firstItem="IYj-Ps-Ht8" firstAttribute="leading" secondItem="RX0-Ul-nOe" secondAttribute="leading" id="Sis-cq-uMZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYj-Ps-Ht8" secondAttribute="trailing" id="fRR-3F-ytl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwc-Bu-KZS">
+                                <rect key="frame" x="197" y="353" width="20" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute_hand" translatesAutoresizingMaskIntoConstraints="NO" id="lIM-lb-SNr">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lIM-lb-SNr" firstAttribute="leading" secondItem="lwc-Bu-KZS" secondAttribute="leading" id="5zQ-9W-IC0"/>
+                                    <constraint firstAttribute="bottom" secondItem="lIM-lb-SNr" secondAttribute="bottom" id="NfE-3P-1Do"/>
+                                    <constraint firstItem="lIM-lb-SNr" firstAttribute="top" secondItem="lwc-Bu-KZS" secondAttribute="top" id="RSc-eS-Qia"/>
+                                    <constraint firstAttribute="trailing" secondItem="lIM-lb-SNr" secondAttribute="trailing" id="rBm-xI-haL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfF-or-2Dg">
+                                <rect key="frame" x="206" y="328" width="2" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwm-cH-bv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="2" height="125"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pwm-cH-bv3" firstAttribute="leading" secondItem="sfF-or-2Dg" secondAttribute="leading" id="4Pa-Xe-IB4"/>
+                                    <constraint firstAttribute="trailing" secondItem="pwm-cH-bv3" secondAttribute="trailing" id="cq8-j8-TVs"/>
+                                    <constraint firstItem="pwm-cH-bv3" firstAttribute="top" secondItem="sfF-or-2Dg" secondAttribute="top" id="hc3-6R-eLG"/>
+                                    <constraint firstItem="pwm-cH-bv3" firstAttribute="height" secondItem="sfF-or-2Dg" secondAttribute="height" multiplier="1:2" id="wPN-eM-GKZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHT-NP-9FW" userLabel="Center View">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fHT-NP-9FW" secondAttribute="height" multiplier="1:1" id="ESZ-Ia-A4l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oxb-K9-Wok" firstAttribute="width" secondItem="YKF-Lw-gQO" secondAttribute="width" multiplier="300:414" id="2XX-Pm-86A"/>
+                            <constraint firstItem="lwc-Bu-KZS" firstAttribute="centerY" secondItem="YKF-Lw-gQO" secondAttribute="centerY" id="2YJ-KN-K5i"/>
+                            <constraint firstItem="RX0-Ul-nOe" firstAttribute="height" secondItem="Oxb-K9-Wok" secondAttribute="height" multiplier="150:300" id="8Xp-KT-Iim"/>
+                            <constraint firstItem="Oxb-K9-Wok" firstAttribute="centerY" secondItem="YKF-Lw-gQO" secondAttribute="centerY" id="8rF-8a-bCy"/>
+                            <constraint firstItem="sfF-or-2Dg" firstAttribute="centerX" secondItem="YKF-Lw-gQO" secondAttribute="centerX" id="9nv-Zk-r8S"/>
+                            <constraint firstItem="fHT-NP-9FW" firstAttribute="centerY" secondItem="YKF-Lw-gQO" secondAttribute="centerY" id="Cwh-dt-8vI"/>
+                            <constraint firstItem="sfF-or-2Dg" firstAttribute="centerY" secondItem="YKF-Lw-gQO" secondAttribute="centerY" id="EkX-Hr-rNu"/>
+                            <constraint firstItem="fHT-NP-9FW" firstAttribute="centerX" secondItem="YKF-Lw-gQO" secondAttribute="centerX" id="FxS-y8-l82"/>
+                            <constraint firstItem="lwc-Bu-KZS" firstAttribute="width" secondItem="Oxb-K9-Wok" secondAttribute="width" multiplier="20:300" id="HUk-8B-Lk9"/>
+                            <constraint firstItem="fHT-NP-9FW" firstAttribute="width" secondItem="Oxb-K9-Wok" secondAttribute="width" multiplier="20:300" id="Hbx-Zs-ai1"/>
+                            <constraint firstItem="RX0-Ul-nOe" firstAttribute="centerX" secondItem="YKF-Lw-gQO" secondAttribute="centerX" id="Med-J5-FcZ"/>
+                            <constraint firstItem="sfF-or-2Dg" firstAttribute="height" secondItem="Oxb-K9-Wok" secondAttribute="height" multiplier="250:300" id="Mn2-Aq-iKy"/>
+                            <constraint firstItem="RX0-Ul-nOe" firstAttribute="centerY" secondItem="YKF-Lw-gQO" secondAttribute="centerY" id="OeL-M6-wn9"/>
+                            <constraint firstItem="RX0-Ul-nOe" firstAttribute="width" secondItem="Oxb-K9-Wok" secondAttribute="width" multiplier="30:300" id="czf-rP-Cwn"/>
+                            <constraint firstItem="Oxb-K9-Wok" firstAttribute="centerX" secondItem="YKF-Lw-gQO" secondAttribute="centerX" id="ghm-27-SnN"/>
+                            <constraint firstItem="lwc-Bu-KZS" firstAttribute="height" secondItem="Oxb-K9-Wok" secondAttribute="height" multiplier="200:300" id="mBY-l5-c3e"/>
+                            <constraint firstItem="sfF-or-2Dg" firstAttribute="width" secondItem="Oxb-K9-Wok" secondAttribute="width" multiplier="2:300" id="rmi-gu-IPK"/>
+                            <constraint firstItem="lwc-Bu-KZS" firstAttribute="centerX" secondItem="YKF-Lw-gQO" secondAttribute="centerX" id="tgD-y7-elS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YKF-Lw-gQO"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerView" destination="fHT-NP-9FW" id="myH-H0-ncd"/>
+                        <outlet property="hourView" destination="RX0-Ul-nOe" id="oOD-tL-Kmi"/>
+                        <outlet property="minuteView" destination="lwc-Bu-KZS" id="6xA-0g-JXK"/>
+                        <outlet property="secondView" destination="sfF-or-2Dg" id="Mzc-Ak-mfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xx0-Mo-fQg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock_body" width="572" height="594.5"/>
+        <image name="hour_hand" width="43" height="300"/>
+        <image name="minute_hand" width="43" height="600"/>
+    </resources>
+</document>
